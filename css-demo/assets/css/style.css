@@ -1,0 +1,19 @@
+/* ------ Box Sizing ------ */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ----------- Global Styles --------- */
+  body{
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* ------- Header with class Primary ------- */
+  header.primary{
+    background-color:yellowgreen;
+  }
