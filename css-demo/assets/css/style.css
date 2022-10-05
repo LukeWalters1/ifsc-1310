@@ -6,14 +6,79 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
-  }
+}
 
   /* ----------- Global Styles --------- */
-  body{
+body{
     font-family: 'Raleway', sans-serif;
-  }
+}
 
   /* ------- Header with class Primary ------- */
-  header.primary{
+header.primary{
     background-color:yellowgreen;
-  }
+    text-align:center;
+    text-shadow: 1px 1px #000000;
+    color:#ffffff;
+
+    /* Long Form */
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    /* (Short Form) Top, Right, Bottom, Left */
+    padding: 40px 40px 40px 40px;
+
+    /* Single Value Applies to All Sides */
+    padding: 40px;
+
+    /* Two Value Top/Bottom | Left, Right */
+    padding: 20px 40px;
+}
+
+header.primary h1 {
+  font-size: 2.6rem;
+}
+
+header.primary h1 a{
+  color:#ffffff; 
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.6rem;
+  /* Top | Left/Right | Bottom */
+  margin: 0 auto 40px;
+}
+
+header.primary nav{
+  width:80vw;
+  max-width:900px;
+  margin:20px auto;
+
+}
+
+header.primary nav ul{
+  padding:0px;
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content:space-evenly;
+
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:rgba(2, 39, 2, 0.404);
+  padding:8px 16px;
+  border-radius:20px 10px 6px 30px;
+  transition:0.5s;
+  border:1px dashed rgba(0,0,0,.6)
+}
+
+header.primary ul li a:hover, header.primary ul li a:active {
+  background-color:rgba(1, 12, 4, 0.8)
+}
