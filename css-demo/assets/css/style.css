@@ -8,10 +8,25 @@ html {
     box-sizing: inherit;
 }
 
+/* ----- utility classes ----- */
+
+.container{
+  max-width:960px;
+  width:80vw;
+  margin:40px auto;
+}
+
+/* ----- responsive images ----- */
+img{
+  max-width:100%;
+}
+
   /* ----------- Global Styles --------- */
 body{
     font-family: 'Raleway', sans-serif;
 }
+  
+
 
   /* ------- Header with class Primary ------- */
 header.primary{
@@ -81,4 +96,50 @@ header.primary ul li a{
 
 header.primary ul li a:hover, header.primary ul li a:active {
   background-color:rgba(1, 12, 4, 0.8)
+}
+
+#intro h2{
+  color:yellowgreen;
+  border-bottom:1px dotted #c0c0c0;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom:2.6rem;
+  border-top:1px solid #c0c0c0;
+  padding-top:2.6rem;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.3);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+#content article.post:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.3);
+
+}
+
+/* ----- media queries ----- */
+
+@media screen and (max-width:650px){
+
+  header.primary nav ul{
+    flex-direction:column;
+}
+  header.primary ul li a{
+    display:block;
+    padding:4px 8px;
+
+  }
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+
 }
