@@ -16,6 +16,30 @@ width:80vw;
 margin:40px auto;
 }
 
+.img-right{
+float:right;
+margin: 10px 0 10px 20px;
+border: 5px solid #c0c0c0;
+padding:5px;
+border-radius:4px;
+background-color:darkgrey;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0px;
+  border: 5px solid #c0c0c0;
+  padding:5px;
+  border-radius:4px;
+  background-color:darkgrey;
+  }
+
+.img-center{
+  display:block;
+  margin:20px auto;
+}
+
+
 /* ----- responsive images ----- */
 img{
 max-width:100%;
@@ -24,6 +48,8 @@ max-width:100%;
 /* ----------- Global Styles --------- */
 body{
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+  line-height: 1.4rem;
 }
 
 
@@ -149,6 +175,40 @@ color:brown;
 
 .post a:hover, .post a:active {
 text-decoration:none;
+}
+
+#demo h2{
+  border-left: 7.5px solid yellowgreen;
+  padding:10px;
+}
+
+#demo a{
+color:brown;
+}
+
+table{
+  border:2px solid #c0c0c0;
+  border-collapse: collapse;
+  width:100%;
+}
+
+tr:nth-child(even){
+  background-color:rgba(192,192,192,.5);
+}
+
+tr:hover{
+  background-color:rgba(192,192,192,.9);
+}
+
+th{
+  background-color: rgb(46, 97, 12);
+  color:#ffffff;
+  padding: 10px;
+}
+
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
 }
 
 /* Attribute Selector */
