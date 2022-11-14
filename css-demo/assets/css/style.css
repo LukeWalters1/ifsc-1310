@@ -103,7 +103,7 @@ margin:20px auto;
 header.primary nav ul{
 padding:0px;
 display:flex;
-flex-direction:row-reverse;
+flex-direction:row;
 justify-content:space-evenly;
 
 }
