@@ -121,17 +121,18 @@ html {
   padding:10px;
   border-radius:4px;
   font-size:.8rem;
+  justify-content:space-evenly;
   }
 
 #articles{
   display:flex;
   flex-direction:row;
-  justify-content:space-evenly;
-  padding:2.4rem 0;
+  justify-content:space-between;
+  padding:1rem 0;
 }
 
 .limit{
-  width:90%;
+  width:85%;
 }
 
 /* ---- aside ---- */
@@ -150,6 +151,12 @@ aside .container{
   width:45%;
  }
 
+ article.widget h2{
+  color:#9393ef;
+  text-shadow: .1px .1px #777777;
+  font-size:1.4rem;
+ }
+
  aside article.widget a:last-of-type {
   
   display:block;
@@ -160,6 +167,21 @@ aside .container{
 
  aside article footer{
   display:none;
+ }
+
+
+ /* ---- #colophon ---- */
+ #colophon{
+  background-color:#4e56f4;
+ }
+
+ #colophon h6{
+  padding:20px;
+  margin:0;
+  color:white;
+  text-align:center;
+  font-size:.9rem;
+  text-shadow: 1px 1px #000000;
  }
 
 
